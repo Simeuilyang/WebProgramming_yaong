@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>어디서 자야댕냥</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/paw.png" rel="icon">
+  <link href="img/paw.png" rel="paw">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: MyPortfolio
+    Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!-- 제일 위 접히는 메뉴 시작 -->
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <div class="col-md-3 d-none d-md-block">
+          <h3>Contact</h3>
+          <p>☎ 대표: 김컴학<br>☎ 053-123-4567<br>☎ <a href="#">myemail@knu.ac.kr</a></p>
+        </div>
+        <div class="col-md-6 d-none d-md-block  mr-auto">
+          <div class="tweet d-flex">
+            <span class="icofont-twitter text-white mt-2 mr-3"></span>
+            <div>
+              <p><em>여행 갈 때 우리 댕댕이 냥이는 어디서 자야댕냥!? 그런 걱정일랑 이제 접어두세요. '어디서 자야댕냥'이 당신의
+              반려동물에게 꼭 맞는 위탁 환경을 찾아 드리겠습니다. 호스트의 정보를 확인하고 펫시터 의뢰하기를 눌러 쉽고 빠르게 위탁 서비스를 이용해보세요!
+              호스트 등록을 통해 직접 펫시터가 되어 수익을 얻을 수도 있답니다!</em></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+        	<img src="img/pet-hotel.png" width=150px>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 제일 위 접히는 메뉴 끝 -->
+  
+  
+  <!-- 페이지 제목 시작 -->
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/pets.png" width=50px>
+      	<b> 어디서 자야댕냥</b>
+      </a>
+      <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+  <!-- 페이지 제목 끝 -->
+  
+  
+  <main id="main">
+
+    <div class="site-section site-portfolio">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+            <h3>돌봄 서비스</h3>
+            <p class="mb-0">당신의 반려동물을 돌봐줄 훌륭한 펫시터들을 모셨습니다.</p>
+          </div>
+          <!--         
+          <div class="col-md-12 col-lg-6 text-left text-lg-right" data-aos="fade-up" data-aos-delay="100">
+            <div id="filters" class="filters">
+              <a href="#" data-filter="*" class="active">All</a>
+              <a href="#" data-filter=".web">Web</a>
+              <a href="#" data-filter=".design">Design</a>
+              <a href="#" data-filter=".branding">Branding</a>
+              <a href="#" data-filter=".photography">Photography</a>
+            </div>
+          </div>
+          -->
+          <div class="col-md-12 col-lg-6 text-left text-lg-right" data-aos="fade-up" data-aos-delay="100">
+         	 <div class="filters">
+         	 	<a href="#">호스트 등록</a>
+          		<a href="#">로그인</a>
+          		<a href="#">회원가입</a>
+          	</div>
+          </div>
+        </div>
+        
+		
+		<div class="row mb-5 p-5 justify-content-center" data-aos="fade-up" style="z-index: 100000">
+			<div class="col-lg-3 p-3 text-center" style="background: #E6E6EB; border-radius: 5px 0px 0px 5px;">
+				<div class="dropdown">
+					<button id="place-btn" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+        				맡기실 위치 (PLACE)
+        				<span class="caret"></span>
+    				</button>
+    				<ul id="place" class="dropdown-menu" data-aos="slide-down">
+            			<li><a class="dropdown-item" href="#" value="서울">서울</a></li>
+						<li><a class="dropdown-item" href="#" value="부산">부산</a></li>
+						<li><a class="dropdown-item" href="#" value="인천">인천</a></li>
+        				<li><a class="dropdown-item" href="#" value="대구">대구</a></li>
+        				<li><a class="dropdown-item" href="#" value="대전">대전</a></li>
+        				<li><a class="dropdown-item" href="#" value="광주">광주</a></li>
+        				<li><a class="dropdown-item" href="#" value="울산">울산</a></li>
+    				</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 p-3 text-center" style="background: #E6E6EB">
+				<div class="dropdown">
+					<button id="type-btn" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+        				반려동물 종류 (TYPE OF YOUR PET)
+        				<span class="caret"></span>
+    				</button>
+    				<ul id="type" class="dropdown-menu" data-aos="slide-down">
+            			<li><a class="dropdown-item" href="#" value="강아지">강아지</a></li>
+						<li><a class="dropdown-item" href="#" value="고양이">고양이</a></li>
+        				<li><a class="dropdown-item" href="#" value="기타">기타</a></li>
+    				</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 p-3 text-center" style="background: #E6E6EB; border-radius: 0px 5px 5px 0px;">
+				<button class="btn btn-info">검색</button>
+			</div>
+		</div>
+		
+
+        
+        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+          <div class="item cat dog col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>홈스윗홈</h3>
+                <span>대구 북구 대현동</span>
+              </div>
+              <img class="img-fluid" src="img/img_1.jpg">
+            </a>
+          </div>
+          <div class="item cat col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>돌돌이네 하우스</h3>
+                <span>부산 동구 범일동</span>
+              </div>
+              <img class="img-fluid" src="img/img_2.jpg">
+            </a>
+          </div>
+          <div class="item cat col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>고먐미</h3>
+                <span>대구 북구 산격동</span>
+              </div>
+              <img class="img-fluid" src="img/img_3.jpg">
+            </a>
+          </div>
+          <div class="item cat col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>인절미</h3>
+                <span>서울 중구 신당동</span>
+              </div>
+              <img class="img-fluid" src="img/img_4.jpg">
+            </a>
+          </div>
+          <div class="item dog col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>두부엄마</h3>
+                <span>서울 용산구 이태원동</span>
+              </div>
+              <img class="img-fluid" src="img/img_5.jpg">
+            </a>
+          </div>
+          <div class="item cat col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>삼색이</h3>
+                <span>대전 서구 괴정동</span>
+              </div>
+              <img class="img-fluid" src="img/img_6.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">&copy; Copyright 어디서 자야댕냥. All Rights Reserved</p>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
+            -->
+            Designed by <a href="https://bootstrapmade.com/">KNU CSE with BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-right">
+          <a href="#"><span class="icofont-twitter"></span></a>
+          <a href="#"><span class="icofont-facebook"></span></a>
+          <a href="#"><span class="icofont-dribbble"></span></a>
+          <a href="#"><span class="icofont-behance"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- 번들 버전으로 바꿈 (드롭다운 때문에) -->
+  <script src="vendor/easing/easing.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+  <!-- 검색 기능 이벤트 처리 --> 
+  <script>
+	// '장소'버튼에 선택된 항목 텍스트 넣기
+	$('#place a').on('click', function(){
+		$('#place-btn').html($(this).html() + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="caret"></span>');
+		alert($(this).attr('value'));
+	});
+	
+	// '반려동물 종류'버튼에 선택된 항목 텍스트 넣기
+	$('#type a').on('click', function(){
+		$('#type-btn').html($(this).html() + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="caret"></span>');
+		alert($(this).attr('value'));
+	});
+  </script>
+		
+</body>
+
+</html>
