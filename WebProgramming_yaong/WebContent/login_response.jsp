@@ -48,7 +48,7 @@
 	   else{ //아이디, 비번이 일치했을 때
 		   %>
            <script>
-           location.href="index.html";
+           location.href="index_afterlogin.html";
            </script>
            <%
 	   }

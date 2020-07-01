@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>어디서 자야댕냥</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Martine</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- fontawesome CSS -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!-- magnific CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/gijgo.min.css">
+    <!-- niceselect CSS -->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- slick CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style1.css">
+  <!-- Favicons -->
+  <link href="https://ifh.cc/g/3TRqp0.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: MyPortfolio
+    Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com/
+  ======================================================= -->
+ <!-- 구글 지도 start-->
+  <script type="text/javascript" src=" http://maps.google.com/maps/api/js?v=3.3&sensor=true"></script>
+  <script type="text/javascript"> 
+  function initialize() {
+   var myLatlng = new google.maps.LatLng(37.539724, 126.991828);
+   var myOptions = {
+    zoom: 15,
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+   }
+   var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+   var marker = new google.maps.Marker( {
+    position: myLatlng, 
+    map: map, 
+    title:"서울 용산구 이태원동" 
+   });   
+   var infowindow = new google.maps.InfoWindow( {
+    content: "서울 용산구 이태원동" 
+   });
+   infowindow.open(map,marker);
+  }
+  window.onload=function() {
+   initialize();
+  }
+  </script> 
+  <!--구글지도 end-->   
+</head>
+
+<body>
+
+  <!-- 제일 위 접히는 메뉴 시작 -->
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+      <!--
+        <div class="col-md-2">
+          <ul class="custom-menu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        -->
+        <div class="col-md-3 d-none d-md-block">
+          <h3>Contact</h3>
+          <p>☎ 대표: 김컴학<br>☎ 053-123-4567<br>☎ <a href="#">myemail@knu.ac.kr</a></p>
+        </div>
+        <div class="col-md-6 d-none d-md-block  mr-auto">
+          <div class="tweet d-flex">
+            <span class="icofont-twitter text-white mt-2 mr-3"></span>
+            <div>
+              <p><em>여행 갈 때 우리 댕댕이 냥이는 어디서 자야댕냥!? 그런 걱정일랑 이제 접어두세요. '어디서 자야댕냥'이 당신의
+              반려동물에게 꼭 맞는 위탁 환경을 찾아 드리겠습니다. 호스트의 정보를 확인하고 펫시터 의뢰하기를 눌러 쉽고 빠르게 위탁 서비스를 이용해보세요!
+              호스트 등록을 통해 직접 펫시터가 되어 수익을 얻을 수도 있답니다!</em></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+        	<img src="https://ifh.cc/g/6TT7EI.png"; width=150px;>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 제일 위 접히는 메뉴 끝 -->
+  
+  
+  <!-- 페이지 제목 시작 -->
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index_afterlogin.html"><img src="https://ifh.cc/g/bFMEy5.png"; width=50px;>
+      	<b> 어디서 자야댕냥</b>
+      </a>
+       <!--  <div class="col-md-12 col-lg-6 text-left text-lg-right" data-aos="fade-up" data-aos-delay="100">
+         	 <div class="filters">
+          		<a href="#">로그인</a>
+          		<a href="#">회원가입</a>
+          	</div>
+          </div>-->
+    </div>
+  </nav>
+  <!-- 페이지 제목 끝 -->
+  
+  
+  <main id="main">
+
+    <!--================Blog Area =================-->
+    <section class="blog_area single-post-area section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 posts-list">
+                    <div class="single-post">
+                        <div class="feature-img">
+                            <img class="img-fluid" src="img/img_5.jpg" alt="">
+                        </div>
+                        <div class="blog_details">
+                            <h2>두부엄마 님이 호스팅
+                     </h2>
+                            <ul class="blog-info-link mt-3 mb-4">
+                                <li>위치정보 : 서울 용산구 이태원동</li>
+                            </ul>
+                            <hr>
+                           <p class="excert">
+								나이  : 43
+                            </p>
+                            <p class="excert">
+								성별 : 여
+                            </p><p class="excert">
+								희망동물 : 강아지
+                            </p>
+                            <p class="excert">
+								비용 : 14,000
+                            </p>
+                            
+                            <hr>
+                            <p>
+                            	상세내용
+                            	<br>
+                            	🌻최대 4마리까지만 돌봄 가능!<br>
+귀가 전 목욕 가능!(추가비용발생)<br>
+<br>
+🍭1박 스케줄<br>
+산책 1회 (40분씩)-공원산책ㆍ바닷가산책<br>
+간식 2회 (조절가능)-생과일ㆍ생야채<br>
+놀이 2회 (30분씩)오전ㆍ오후<br>
+<br>
+🐶하루종일 함께 뛰어놀수있는 성격좋은 반려견<br>
+지우가 있습니다~~^^<br>
+🐕친구들을 좋아해 빠른 적응을 도와주고있어요~<br>
+							</p>
+							<hr>
+                            <div class="quote-wrapper">
+                                <div class="quotes">
+									<div id="map_canvas" style="width:90%; height:300px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigation-top">
+                        <div class="d-sm-flex justify-content-between text-center">
+                            <p class="like-info"><span class="align-middle"><i class="far fa-heart"></i></span> Lily and 4 people like this</p>
+                            <div class="col-sm-4 text-center my-2 my-sm-0">
+                                <!-- <p class="comment-count"><span class="align-middle"><i class="far fa-comment"></i></span> 06 Comments</p> -->
+                            </div>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="navigation-area">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+                                    <div class="thumb">
+                                        <a href="moreinformation4.html">
+                                            <img class="img-fluid" src="img/post/post_4.png" alt="" width=60px height=60px >
+                                        </a>
+                                    </div>
+                                    <div class="arrow">
+                                        <a href="moreinformation4.html">
+                                            <span class="lnr text-white ti-arrow-left"></span>
+                                        </a>
+                                    </div>
+                                    <div class="detials">
+                                        <p>Prev Post</p>
+                                        <a href="moreinformation4.html">
+                                            <h4>인절미</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+                                    <div class="detials">
+                                        <p>Next Post</p>
+                                        <a href="moreinformation.html">
+                                            <h4>삼색이</h4>
+                                        </a>
+                                    </div>
+                                    <div class="arrow">
+                                        <a href="moreinformation.html">
+                                            <span class="lnr text-white ti-arrow-right"></span>
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="moreinformation.html">
+                                            <img class="img-fluid" src="img/post/post_6.png" alt="" width=60px height=60px >
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-author">
+                        <div class="media align-items-center">
+                            <img src="img/post/post_5.png" alt="">
+                            <div class="media-body">
+                                <a href="#">
+                                    <h4>두부엄마</h4>
+                                </a>
+                                <p>Second divided from form fish beast made. Every of seas all gathered use saying you're, he our dominion twon Second divided from</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments-area">
+                        <h4>05 Comments</h4>
+                        <div class="comment-list">
+                            <div class="single-comment justify-content-between d-flex">
+                                <div class="user justify-content-between d-flex">
+                                    <div class="thumb">
+                                        <img src="img/comment/comment_1.png" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p class="comment">
+                                            Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser
+                                        </p>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <h5>
+                                       <a href="#">Emilly Blunt</a>
+                                    </h5>
+                                                <p class="date">December 4, 2017 at 3:12 pm </p>
+                                            </div>
+                                            <div class="reply-btn">
+                                                <a href="#" class="btn-reply text-uppercase">reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-list">
+                            <div class="single-comment justify-content-between d-flex">
+                                <div class="user justify-content-between d-flex">
+                                    <div class="thumb">
+                                        <img src="img/comment/comment_2.png" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p class="comment">
+                                            Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser
+                                        </p>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <h5>
+                                       <a href="#">Emilly Blunt</a>
+                                    </h5>
+                                                <p class="date">December 4, 2017 at 3:12 pm </p>
+                                            </div>
+                                            <div class="reply-btn">
+                                                <a href="#" class="btn-reply text-uppercase">reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-list">
+                            <div class="single-comment justify-content-between d-flex">
+                                <div class="user justify-content-between d-flex">
+                                    <div class="thumb">
+                                        <img src="img/comment/comment_3.png" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p class="comment">
+                                            Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser
+                                        </p>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <h5>
+                                       <a href="#">Emilly Blunt</a>
+                                    </h5>
+                                                <p class="date">December 4, 2017 at 3:12 pm </p>
+                                            </div>
+                                            <div class="reply-btn">
+                                                <a href="#" class="btn-reply text-uppercase">reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-form">
+                        <h4>Leave a Reply</h4>
+                        <form class="form-contact comment_form" action="#" id="commentForm">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control w-100" name="comment" id="comment" cols="30" rows="9" placeholder="Write Comment"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control" name="name" id="name" type="text" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control" name="email" id="email" type="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input class="form-control" name="website" id="website" type="text" placeholder="Website">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="button button-contactForm btn_1">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog_right_sidebar">
+                        <aside class="single_sidebar_widget search_widget">
+                            <form action="contact.jsp" method="POST">
+                                <!-- <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder='Search Keyword' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
+                                        <div class="input-group-append">
+                                            <button class="btn" type="button"><i class="ti-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1" type="submit">의뢰하기</button>
+                            </form>
+                        </aside>
+                        <aside class="single_sidebar_widget post_category_widget">
+                            <h4 class="widget_title">Category</h4>
+                            <ul class="list cat-list">
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>강아지</p>
+                                        <p>(37)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>고양이</p>
+                                        <p>(10)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>서울</p>
+                                        <p>(03)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>대구</p>
+                                        <p>(11)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>고슴도치</p>
+                                        <p>(21)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>보건 의료</p>
+                                        <p>(21)</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="single_sidebar_widget popular_post_widget">
+                            <h3 class="widget_title">Recent Post</h3>
+                            <div class="media post_item">
+                                <img src="img/post/post_1.png" alt="post">
+                                <div class="media-body">
+                                    <a href="single-blog.html">
+                                        <h3>From life was you fish...</h3>
+                                    </a>
+                                    <p>January 12, 2019</p>
+                                </div>
+                            </div>
+                            <div class="media post_item">
+                                <img src="img/post/post_2.png" alt="post">
+                                <div class="media-body">
+                                    <a href="single-blog.html">
+                                        <h3>The Amazing Hubble</h3>
+                                    </a>
+                                    <p>02 Hours ago</p>
+                                </div>
+                            </div>
+                            <div class="media post_item">
+                                <img src="img/post/post_3.png" alt="post">
+                                <div class="media-body">
+                                    <a href="single-blog.html">
+                                        <h3>Astronomy Or Astrology</h3>
+                                    </a>
+                                    <p>03 Hours ago</p>
+                                </div>
+                            </div>
+                            <div class="media post_item">
+                                <img src="img/post/post_4.png" alt="post">
+                                <div class="media-body">
+                                    <a href="single-blog.html">
+                                        <h3>Asteroids telescope</h3>
+                                    </a>
+                                    <p>01 Hours ago</p>
+                                </div>
+                            </div>
+                        </aside>
+                        <!-- <aside class="single_sidebar_widget tag_cloud_widget">
+                            <h4 class="widget_title">Tag Clouds</h4>
+                            <ul class="list">
+                                <li>
+                                    <a href="#">project</a>
+                                </li>
+                                <li>
+                                    <a href="#">love</a>
+                                </li>
+                                <li>
+                                    <a href="#">technology</a>
+                                </li>
+                                <li>
+                                    <a href="#">travel</a>
+                                </li>
+                                <li>
+                                    <a href="#">restaurant</a>
+                                </li>
+                                <li>
+                                    <a href="#">life style</a>
+                                </li>
+                                <li>
+                                    <a href="#">design</a>
+                                </li>
+                                <li>
+                                    <a href="#">illustration</a>
+                                </li>
+                            </ul>
+                        </aside> -->
+                        <aside class="single_sidebar_widget instagram_feeds">
+                            <h4 class="widget_title">Instagram Feeds</h4>
+                            <ul class="instagram_row flex-wrap">
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/post/post_5.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/post/post_6.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/post/post_7.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/post/post_8.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/post/post_9.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/post/post_10.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <!--  <aside class="single_sidebar_widget newsletter_widget">
+                            <h4 class="widget_title">Newsletter</h4>
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
+                                </div>
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1" type="submit">Subscribe</button>
+                            </form>
+                        </aside>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ Blog Area end =================-->
+    
+    
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">&copy; Copyright 어디서 자야댕냥. All Rights Reserved</p>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
+            -->
+            Designed by <a href="https://bootstrapmade.com/">KNU CSE with BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-right">
+          <a href="#"><span class="icofont-twitter"></span></a>
+          <a href="#"><span class="icofont-facebook"></span></a>
+          <a href="#"><span class="icofont-dribbble"></span></a>
+          <a href="#"><span class="icofont-behance"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- 번들 버전으로 바꿈 (드롭다운 때문에) -->
+  <script src="vendor/easing/easing.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+  
+
+</body>
+
+</html>
+

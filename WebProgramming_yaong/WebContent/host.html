@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Host Registration</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->   
+   <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+   <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+   <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+   <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+   <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->   
+   <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+   <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+   <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->   
+   <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+   <link rel="stylesheet" type="text/css" href="css/util.css">
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+   
+   <div class="limiter">
+      <div class="container-login100">
+         <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+            <form action="host_response.jsp" method="POST" class="login100-form validate-form flex-sb flex-w">
+               <span class="login100-form-title p-b-32">
+                  PETSITTER REGISTRATION
+               </span>
+
+               <span class="txt1 p-b-11">
+                  User Name
+               </span>
+               <div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
+                  <input class="input100" type="text" name="username" >
+                  <span class="focus-input100"></span>
+               </div>
+               
+               <span class="txt1 p-b-11">
+                  Age
+               </span>
+               <div class="wrap-input100 m-b-36">
+                     <select class = "input100" name = "age" style = "border-style : none;">
+                        <option value = "none">나이 선택</option>
+                        <option value = "20">20대</option>
+                        <option value = "30">30대</option>
+                        <option value = "40">40대</option>
+                        <option value = "50">50대</option>
+                        <option value = "60">60대</option>
+                     </select>
+                     <span class="focus-input100"></span>
+               </div>
+               
+               <span class="txt1 p-b-11">
+                  Sex
+               </span>
+               <div class="wrap-input100 m-b-36">
+                     <select class = "input100" name = "gender" style = "border-style : none;">
+                        <option value = "none">성별 선택</option>
+                        <option value = "남">남</option>
+                        <option value = "여">여</option>
+                     </select>
+                     <span class="focus-input100"></span>
+               </div>
+
+               <span class="txt1 p-b-11">
+                  Animal Species
+               </span>
+               <div class="wrap-input100 validate-input m-b-36" data-validate = "Pet is required">
+                  <input class="input100" type="text" name="pet" placeholder = "ex)강아지/고양이" >
+                  <span class="focus-input100"></span>
+               </div>
+               
+               <span class="txt1 p-b-11">
+                  Cost
+               </span>
+               <div class="wrap-input100 validate-input m-b-36" data-validate = "Money is required">
+                  <input class="input100" type="text" name="money" placeholder = "ex)비용협의, 15000원" >
+                  <span class="focus-input100"></span>
+               </div>
+               
+               <span class="txt1 p-b-11">
+                  Walking
+               </span>
+               <div class="flex-sb-m w-full p-b-48">
+                  <div class="contact100-form-checkbox">
+                     <input class="input-checkbox100" id="ckb1" type="checkbox" value = "0" name="remember-me">
+                     <label class="label-checkbox100" for="ckb1">
+                        o
+                     </label>
+                  </div>
+               </div>
+               
+               <span class="txt1 p-b-11">
+                  Address
+               </span>
+               <div class="wrap-input100 m-b-36">
+               <input type="text" id="sample6_postcode" placeholder="우편번호">
+               <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기" ><br>
+               <input type="text" id="sample6_address" size = "40" placeholder="주소"><br>
+               <input type="text" id="sample6_extraAddress" size = "45" placeholder="참고항목">
+
+<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    function sample6_execDaumPostcode() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                var addr = ''; // 주소 변수
+                var extraAddr = ''; // 참고항목 변수
+
+                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    addr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    addr = data.jibunAddress;
+                }
+
+                // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                if(data.userSelectedType === 'R'){
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                    // 건물명이 있고, 공동주택일 경우 추가한다.
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                    if(extraAddr !== ''){
+                        extraAddr = ' (' + extraAddr + ')';
+                    }
+                    // 조합된 참고항목을 해당 필드에 넣는다.
+                    document.getElementById("sample6_extraAddress").value = extraAddr;
+                
+                } else {
+                    document.getElementById("sample6_extraAddress").value = '';
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('sample6_postcode').value = data.zonecode;
+                document.getElementById("sample6_address").value = addr;
+            }
+        }).open();
+    }
+</script>      
+               </div>
+               
+               <span class="txt1 p-b-11">
+                  Picture
+               </span>
+               <div class = "wrap-input100 m-b-12" style = "border-style : none;">
+                  <input type = "file" id = "picture" name = "picture" >
+               </div>
+               
+               <span class="txt1 p-b-11">
+                  Extra
+               </span>
+               <div class="wrap-input100 m-b-36">
+                  <textarea class="input100"  name="extra"></textarea>
+               </div>
+               
+               
+               <div class="container-login100-form-btn">
+                  <button type="submit" class="login100-form-btn" onclick = "alert('펫시터 등록이 완료되었습니다!')">
+                     SIGN
+                  </button>
+                  
+               </div>
+
+            </form>
+         </div>
+      </div>
+   </div>
+   
+
+   <div id="dropDownSelect1"></div>
+   
+<!--===============================================================================================-->
+   <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+   <script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+   <script src="vendor/bootstrap/js/popper.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+   <script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+   <script src="vendor/daterangepicker/moment.min.js"></script>
+   <script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+   <script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+   <script src="js/main.js"></script>
+
+</body>
+</html>
